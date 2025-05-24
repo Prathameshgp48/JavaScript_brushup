@@ -1,0 +1,38 @@
+// Primitives (call by value -> copy of value is given) 7 types
+// String, Number, Boolean, null(empty not zero), undefined(variable declared but value not assigned)
+// symbol, BigInt (data-type for larger values)
+// 
+const score = 100
+const scoreValue = 100.3
+const isLoggesIn = false
+const outsideTemp = null
+const userEmail = undefined
+
+//symbol
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId)
+
+const bigNumber = 234254235245345232353n
+
+// REFERENCES(non primitives-> direct reference)
+// Array, Objects, functions
+const heroes = ["Luffy", "Naruto", "Tanjiro", "kenshin", "Gojo", "Isagi"]
+let obj = {
+    name: "Patty",
+    marks: 40
+}
+
+const copyHeros = [...heroes]
+copyHeros.splice(heroes.length-1, 1)
+
+console.log(copyHeros, heroes)
+
+const myFunction = function() {
+    console.log("Hello Developer")
+}
+
+console.log(typeof userEmail)
+console.log(typeof outsideTemp) //null type will be given as object
+console.log(typeof myFunction)
