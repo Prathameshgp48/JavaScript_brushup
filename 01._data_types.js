@@ -12,7 +12,7 @@ const userEmail = undefined
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId)
+// console.log(id === anotherId)
 
 const bigNumber = 234254235245345232353n
 
@@ -27,12 +27,30 @@ let obj = {
 const copyHeros = [...heroes]
 copyHeros.splice(heroes.length-1, 1)
 
-console.log(copyHeros, heroes)
+// console.log(copyHeros, heroes)
 
 const myFunction = function() {
     console.log("Hello Developer")
 }
 
-console.log(typeof userEmail)
-console.log(typeof outsideTemp) //null type will be given as object
-console.log(typeof myFunction)
+// console.log(typeof userEmail)
+// console.log(typeof outsideTemp) //null type will be given as object
+// console.log(typeof myFunction)
+
+//stack(primitives) , heap(non primitives)
+let ytName = "hellocodedotcom"
+let anotherName = ytName
+console.log(ytName, anotherName)
+//both will be stored in stack and anotherName will be given copy of ytName instead of reference
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "patty@gmail.com"
+//here both object variables are stored in stack
+//their values will be stored in heap with same refernce
+console.log(userOne, userTwo)
+//change in one reflect to original one as both are using same reference
