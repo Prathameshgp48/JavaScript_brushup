@@ -3,7 +3,7 @@ const myArr = [0, 1, 2, 3, 4, 5]
 //shallow copy: object copy properties share the same reference of original one
 //deep copy: properties do not share the same references
 
-console.log(myArr[6])
+// console.log(myArr[5])
 
 //another definition
 const myArr2 = new Array(1, 3, 4, 5)
@@ -39,8 +39,8 @@ console.log(myn1)
 console.log(myn3)
 console.log("B ", myArr)
 
-//slice take two inputs: start index from where the elements be removed
-//second(optional and exclusive) is how many elements to remove
+// slice take two inputs: start index from where the elements be removed
+// second(optional and exclusive) is how many elements to remove
 const myn2 = myArr.splice(1, 3)//return deleted elements
 // const myn2 = myArr.splice(1) // remove all elements with and after specified start index
 console.log(myn2)

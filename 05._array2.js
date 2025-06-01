@@ -17,9 +17,9 @@ const dcs = ["Superman", "Batman", "Robin"]
 // const real_arr = another_arr.flat(Infinity)
 // console.log(real_arr)
 
-console.log(Array.isArray("Hitesh"))
-console.log(Array.from("Hitesh"))
-console.log(Array.from({name: "APt"}))
+// console.log(Array.isArray("Hitesh"))
+// console.log(Array.from("Hitesh"))
+// console.log(Array.from({name: "APt"}))
 //it will return [] as we havent specified what(key or value) to consider to make arr
 
 const s1 = 100
