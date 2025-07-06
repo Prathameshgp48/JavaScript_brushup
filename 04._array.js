@@ -23,9 +23,9 @@ myArr.push(6)
 // console.log(myArr.includes(9))
 // console.log(myArr.indexOf(3))  //-1 in case of unavailable value
 
-// const newArr = myArr.join()
+const newArr = myArr.join()
 //join converts all arr into string
-// console.log(newArr, typeof newArr)
+console.log(newArr, typeof newArr)
 
 //SLICE AND SPLICE
 console.log("A ", myArr)
@@ -33,6 +33,7 @@ console.log("A ", myArr)
 //slice take two input start(optional) index and end index(optional and exclusive) for slicing
 const myn1 = myArr.slice(1, 3)
 const myn3 = myArr.slice(1)
+// const myn6 = myArr.slice()
 //all operations on copy of original array
 //if start index not specified then slice consider 0 as start
 console.log(myn1)
