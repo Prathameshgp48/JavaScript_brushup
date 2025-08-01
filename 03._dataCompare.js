@@ -7,6 +7,7 @@
 // console.log("Jatin" < 9)
 //convert the string into number and if not possible it compares with NaN which is false
 // console.log("02" > 1)
+// console.log([1] + [1,2,3])  //"1" + "1,2, 3"  -> "11,2,3"
 
 console.log(null > 0) //convet null -> 0
 console.log(null == 0) 

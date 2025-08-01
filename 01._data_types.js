@@ -35,7 +35,7 @@ const myFunction = function() {
 
 // console.log(typeof userEmail)
 // console.log(typeof outsideTemp) //null type will be given as object
-// console.log(typeof myFunction)
+console.log(typeof myFunction)
 
 //stack(primitives) , heap(non primitives)
 let ytName = "hellocodedotcom"
